@@ -21,7 +21,7 @@ async function main() {
     return
   }
   console.log(`require deposit: ${totalDeposit} ${config.nativeSymbol}`)
-  await sleep(3 * 1000)
+  await sleep(5 * 1000)
 
   // ------------------------------
   // Fund wallet
@@ -36,7 +36,7 @@ async function main() {
     console.log(`❌ fund balance is insufficient`)
     return
   }
-  await sleep(3 * 1000)
+  await sleep(5 * 1000)
 
   // ------------------------------
   // Start deposit
@@ -59,7 +59,7 @@ async function main() {
       `depositContract.deposit()`
     )
 
-    await sleep(500)
+    await sleep(1000)
     console.log(``)
   }
 }
