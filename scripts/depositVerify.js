@@ -21,7 +21,7 @@ async function main() {
     return
   }
   console.log(`require deposit: ${totalDeposit} ${config.nativeSymbol}`)
-  await sleep(3 * 1000)
+  await sleep(5 * 1000)
 
   // ------------------------------
   // Impersonate fund wallet
@@ -48,7 +48,7 @@ async function main() {
       `depositContract.deposit()`
     )
 
-    await sleep(500)
+    await sleep(1000)
     console.log(``)
   }
 }
