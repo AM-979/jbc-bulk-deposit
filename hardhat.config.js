@@ -36,11 +36,11 @@ module.exports = {
   networks: {
     hardhat: {
       forking: {
-        url: `https://jib-rpc.inan.in.th/`,
+        url: `https://rpc-l1.jbc.xpool.pw/`,
       },
     },
     jbc: {
-      url: `https://jib-rpc.inan.in.th/`,
+      url: `https://rpc-l1.jbc.xpool.pw/`,
       chainId: 8899,
       gasPrice: parseInt(`${process.env.GAS_PRICE}`) * 10**9,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
